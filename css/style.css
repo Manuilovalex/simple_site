@@ -226,8 +226,12 @@ a {
   }
 
   .navbar__list {
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+  .content__description {
+    font-size: 16px;
   }
 
   .content__link {
@@ -238,6 +242,10 @@ a {
   .section {
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+
+  .section__description {
+    font-size: 16px;
   }
 
   .video__iframe {
@@ -260,8 +268,6 @@ a {
 
   .navbar__list {
     gap: 10px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
   }
 
   .content {

@@ -247,7 +247,6 @@ a {
 
 @media (max-width: 576px) {
   .header {
-    font-size: 14px;
     min-height: 400px;
   }
 
@@ -259,14 +258,14 @@ a {
     margin-bottom: 30px;
   }
 
-  .content {
-    align-items: center;
-  }
-
   .navbar__list {
-    gap: 18px;
+    gap: 10px;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  .content {
+    align-items: center;
   }
 
   .content__description {

@@ -1,0 +1,61 @@
+@use "../../presets/skin" as *;
+@use "../../presets/variables" as *;
+
+.header {
+  min-height: 700px;
+  padding-top: 66px;
+  padding-bottom: 100px;
+
+  background-color: $color-gray-light;
+
+  @media (max-width: 768px) {
+    min-height: 600px;
+  }
+
+  @media (max-width: 576px) {
+    min-height: 400px;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  max-width: 540px;
+
+  gap: 30px;
+
+  &__title {
+    margin: 0 0 4px;
+
+    color: $color-black;
+
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: $line-height-lg;
+  }
+
+  &__description {
+    margin-bottom: 26px;
+
+    color: $color-secondary;
+
+    line-height: $line-height-lg;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 225px;
+    min-height: 65px;
+    padding: 0.5em;
+
+    letter-spacing: $letter-spacing;
+
+    color: $color-white;
+    background-color: $color-primary;
+  }
+}

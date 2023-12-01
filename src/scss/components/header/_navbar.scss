@@ -1,0 +1,41 @@
+@use "../../presets/skin" as *;
+@use "../../presets/variables" as *;
+
+.navbar {
+  margin-bottom: 134px;
+
+  @media (max-width: 576px) {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+
+    gap: 43px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      gap: 30px;
+    }
+
+    @media (max-width: 576px) {
+      gap: $gap-sm;
+    }
+  }
+
+  &__link {
+    padding: $gap-sm 0;
+
+    letter-spacing: $letter-spacing;
+
+    color: $color-black;
+
+    line-height: $line-height-lg;
+  }
+
+  &__link:hover {
+    color: $color-primary;
+  }
+}
